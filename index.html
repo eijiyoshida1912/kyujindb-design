@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <body class="top">
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__top_text"><a href="#">広告掲載(無料)</a></p>
+        <ul class="buttons">
+          <li class="buttons__button">
+            <a href="#">
+              <i class="far fa-clock"></i>
+              <span class="buttons__text">閲覧履歴</span>
+              <span class="buttons__number">88</span>
+            </a>
+          </li>
+          <li class="buttons__button">
+            <a href="#">
+              <i class="far fa-heart"></i>
+              <span class="buttons__text">気になる</span>
+              <span class="buttons__number">88</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="main">
+        <div class="main__inner">
+          <h1 class="main__logo"><img src="./images/logo_header.png" alt="仕事探しDB"></h1>
+          <p class="main__text">掲載中の転職サイト・エージェント<strong>15,234社</strong></p>
+          <ul class="toggle_button">
+            <!-- 開いているボタンはopenクラス追加 -->
+            <li class="toggle_button__button open">企業を探す</li>
+            <li class="toggle_button__button">求人情報を探す</li>
+          </ul>
+          <form>
+            <div class="form_wrap">
+              <div class="form__work_type">
+                <label>職種</label>
+                <div class="select_box__wrap">
+                  <select class="select_box">
+                    <option value="" selected>希望職種を選択</option>
+                    <option value="A">A型</option>
+                    <option value="B">B型</option>
+                    <option value="O">O型</option>
+                    <option value="AB">AB型</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__work_place">
+                <label>勤務地</label>
+                <div class="select_box__wrap">
+                  <select class="select_box">
+                    <option value="" selected>都道府県を選択</option>
+                    <option value="A">A型</option>
+                    <option value="B">B型</option>
+                    <option value="O">O型</option>
+                    <option value="AB">AB型</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="submit_button">検索</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="history__head_wrap">
+          <h2 class="history__head">最近の検索履歴</h2>
+          <a href="#" class="history__delete">履歴の消去</a>
+        </div>
+        <!-- ▼SP版 -->
+        <div class="history__box--sp">
+          <ul class="list">
+            <li><a href="#">一般事務<span class="list__number">10,212件</span></a></li>
+            <li><a href="#">一般事務<span class="list__number">10,212件</span></a></li>
+            <li><a href="#">一般事務<span class="list__number">10,212件</span></a></li>
+            <li><a href="#">一般事務<span class="list__number">10,212件</span></a></li>
+          </ul>
+        </div>
+        <!-- ▲SP版 -->
+        <!-- ▼PC版 -->
+        <div class="history__box--pc">
+          <ul class="list">
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+            <li><a href="#">一般事務</a></li>
+          </ul>
+        </div>
+
+        <!-- ▲PC版 -->
+        
+        
+      </div>
+
+      <div class="pref">
+        <div class="pref__head_wrap">
+          <h2 class="pref__head">勤務地から探す</h2>
+          <div class="service_select">
+            <p>サービス：</p>
+            <div class="select_box__wrap">
+              <select class="select_box">
+                <option value="" selected>転職エージェント</option>
+                <option value="A">転職サイト</option>
+                <option value="B">フリーランス</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- ▼SP版 -->
+        <ul class="pref__box--sp">
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- ▲SP版 -->
+        <!-- ▼PC版 -->
+        <ul class="pref__box--pc">
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+          <li><span class="pref__area">北海道・東北</span>
+            <ul class="child_pref_list">
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+              <li><a href="#">北海道</a></li>
+              <li><a href="#">青森県</a></li>
+              <li><a href="#">岩手県</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- ▲PC版 -->
+
+      </div>
+      
+      <div class="ranking">
+        <h2 class="ranking__head">ランキングから探す</h2>
+        <div class="ranking__box">
+          <ul class="list">
+            <li><a href="#"><i class="fas fa-desktop"></i><span>転職サイトランキング</span></a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i><span>転職エージェントランキング</span></a></li>
+            <li><a href="#"><i class="fas fa-coffee"></i><span>フリーランスランキング</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="agent">
+        <h2 class="agent__head">よく見られている転職エージェント</h2>
+        <ul class="list">
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニーソニーソニーソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site">
+        <h2 class="agent__head">よく見られている転職サイト</h2>
+        <ul class="list">
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニーソニーソニーソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+          <li class="list__company">
+            <a href="#">
+              <img src="./images/logo_partner.png" class="list__image">
+              <span class="list__name">ソニー</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <ul class="top_text_list">
+        <li>
+          <h2 class="top_text_list__head">テキストテキスト</h2>
+          <p class="top_text_list__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+        <li>
+          <h2 class="top_text_list__head">テキストテキスト</h2>
+          <p class="top_text_list__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+        <li>
+          <h2 class="top_text_list__head">テキストテキスト</h2>
+          <p class="top_text_list__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+        <li>
+          <h2 class="top_text_list__head">テキストテキスト</h2>
+          <p class="top_text_list__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+      </ul>
+
+      <ul class="sns">
+        <li class="sns__button--fb"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="sns__button--tw"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="sns__button--line"><a href="#"><i class="fab fa-line"></i></a></li>
+        <li class="sns__button--mail"><a href="#"><i class="fas fa-envelope-square"></i></a></li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__logo"><img src="./images/logo_header.png" alt="仕事探しDB"></p>
+      <ul class="footer__links">
+        <li><a href="#">仕事探しDBとは</a></li>
+        <li><a href="#">運営会社</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">ヘルプ</a></li>
+        <li><a href="#">広告掲載(無料)</a></li>
+      </ul>
+      <p class="footer__address">&copy; 仕事探しDB</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
