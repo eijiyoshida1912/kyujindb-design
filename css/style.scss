@@ -41,8 +41,9 @@ a {
 
 /* --------- ヘッダー ----------*/
 .header {
-  background-color: whitesmoke;
+  background-color: #fff;
   padding: 0 10px;
+  border-bottom: 1px solid #ddd;
   &__inner {
     height: 50px;
     position: relative;
@@ -79,6 +80,7 @@ a {
         flex-direction: column;
         text-decoration: none;
         color: #2863a5;
+        border: 1px solid #ddd;
       }
     }
     &__text {
@@ -209,6 +211,7 @@ a {
   .breadcrumb {
     max-width: 960px;
     margin: 0 auto;
+    box-sizing: content-box;
   }
 }
 
@@ -734,16 +737,23 @@ a {
 
 /* ---------- 検索結果 ---------- */
 .search_result {
+  .menu_list--pc {
+    display: none;
+  }
   .tabs {
     .tabs__list {
       display: flex;
       justify-content: space-between;
       > li {
-        width: 33%;
+        width: 33.33%;
         text-align: center;
         font-size: 12px;
         background-color: #aaa;
         border-radius: 4px 4px 0 0;
+        border-top: 1px solid whitesmoke;
+        border-left: 1px solid whitesmoke;
+        border-right: 1px solid whitesmoke;
+        border-bottom: 1px solid #2863a5;
         > a {
           display: block;
           color: #fff;
@@ -762,21 +772,31 @@ a {
   }
 
   .search_buttons--sp {
+    background-color: #fff;
+    padding: 10px;
     .search_buttons {
+      &__inner {
+        @include box;
+        border: 1px solid #ddd;
+        padding: 0;
+      }
       &__tabs {
         display: flex;
         justify-content: space-between;
-        margin: 24px 0 0;
         > li {
-          width: 33%;
+          width: 33.33%;
           text-align: center;
           color: #2863a5;
           font-weight: bold;
-          border-right: 1px solid #999;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #eee;
           line-height: 1;
-          padding: 4px 0;
+          padding: 12px 0 4px;
           &:last-child {
-            border: none;
+            border-right: none;
+          }
+          &.active {
+            border-bottom: 4px solid #2863a5;
           }
           &::after {
             content: '\f107';
@@ -789,11 +809,11 @@ a {
         }
       }
       &__condition {
-        @include box;
       }
       &__condition_list {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
+        padding: 10px;
         > li {
           width: 50%;
           margin: 10px 0;
@@ -809,9 +829,14 @@ a {
             line-height: 1;
           }
         }
+        &.open {
+          display: flex;
+        }
+      }
+      &__submit_wrap {
+        padding: 10px;
       }
       &__submit {
-        margin-top: 20px;
         width: 100%;
         height: 44px;
         border-radius: 22px;
@@ -822,16 +847,17 @@ a {
       }
     }
   }
+  &__title_wrap {
+    padding: 0 10px;
+  }
 
   &__title {
     font-size: 16px;
     font-weight: bold;
-    margin: 20px 0 12px;
-    padding: 0 10px;
+    padding: 20px 0 12px;
   }
   &__result {
     font-weight: bold;
-    padding: 0 10px;
     font-size: 12px;
     margin-bottom: 12px;
     > strong {
@@ -846,7 +872,6 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding: 0 10px;
     &__text {
       width: 80px;
     }
@@ -876,12 +901,19 @@ a {
       }
     }
   }
+  &__job_offers_wrap {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
 
   .job_offers {
-    padding: 40px 10px 0;
+    padding: 10px;
     > li {
       @include box;
       border-top: 4px solid #2863a5;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
       position: relative;
       margin-bottom: 20px;
     }
@@ -978,8 +1010,8 @@ a {
         text-align: center;
         padding: 8px 0;
         > i {
-          width: 30px;
-          height: 30px;
+          width: 24px;
+          height: 24px;
           background-color: #2863a5;
           color: white;
           padding: 4px;
@@ -987,6 +1019,7 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: 10px;
         }
         > span {
           font-size: 11px;
@@ -997,12 +1030,13 @@ a {
         align-items: center;
         width: calc(100% - 60px);
         padding: 12px;
+        font-size: 12px;
       }
     }
 
     .point {
       background-color: #e4f0fd;
-      padding: 20px 10px;
+      padding: 10px;
       &__title {
         font-size: 16px;
         text-align: center;
@@ -1011,7 +1045,7 @@ a {
         margin-bottom: 8px;
       }
       &__head {
-        font-size: 16px;
+        font-size: 14px;
       }
       &__text {
         font-size: 13px;
@@ -1098,14 +1132,6 @@ a {
         }
       }
     }
-
-    
-
-
-    
-
-
-
   }
 
   .pages {
@@ -1160,7 +1186,8 @@ a {
   }
 
   .search_city {
-    padding: 0 10px 40px;
+    padding: 0 10px;
+    margin-bottom: 40px;
     &__head {
       @include head;
     }
@@ -1188,45 +1215,10 @@ a {
           top: calc(50% - 12px);
           color: #2863a5;
         }
-
       }
     }
-    
-      
-
-
-
-
-      
-      // > li {
-      //   width: 50%;
-      //   > a {
-      //     padding: 0 10px;
-      //     display: block;
-      //     position: relative;
-      //     line-height: 44px;
-      //     height: 44px;
-      //     border-top: 1px solid #ddd;
-      //     &::after {
-      //       content: '\f105';
-      //       font-family: "Font Awesome 5 Free";
-      //       font-weight: 900;
-      //       position: absolute;
-      //       right: 10px;
-      //       color: #2863a5;
-      //     }
-      //   }
-      // }
   }
 
-
-
-
-
-
-
-
-  
   .ranking {
     padding: 0 10px 40px;
     &__head {
@@ -1354,11 +1346,114 @@ a {
 
 @media screen and (min-width: 768px) {
   .search_result {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 960px;
+      box-sizing: content-box;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+    .menu_list--pc {
+      @include box;
+      display: block;
+      width: 220px;
+      padding: 20px;
+      .change_pref {
+        margin-bottom: 20px;
+      }
+      .change_job_type,
+      .change_character {
+        margin-bottom: 20px;
+        &__list {
+          font-size: 13px;
+          input {
+            margin-right: 4px;
+          }
+        }
+      }
+      .history {
+        &__list {
+          font-size: 13px;
+        }
+        &__delete {
+          font-size: 12px;
+        }
+      }
+      .menu_head {
+        font-size: 16px;
+        border-left: 4px solid #2863a5;
+        padding-left: 8px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 12px;
+      }
+      .select_box {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 44px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding-left: 12px;
+        &__wrap {
+          position: relative;
+          &::after {
+            content: '\f107';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 12px);
+            color: #2863a5;
+          }
+        }
+      }
+    }
+    .contents_right {
+      width: calc(100% - 220px);
+      padding-left: 12px;
+    }
+    &__result_wrap {
+      display: flex;
+    }
+    &__job_offers_wrap {
+      @include box;
+      padding: 20px;
+      border-left: 1px solid #2863a5;
+      border-right: 1px solid #2863a5;
+      border-bottom: 1px solid #2863a5;
+      border-radius: 0 0 4px 4px;
+    }
+    &__title_wrap {
+      padding: 0;
+    }
+    &__title {
+      padding-top: 0;
+    }
+    .job_offers {
+      padding: 0;
+    }
+    .search_buttons--sp {
+      display: none;
+    }
+    .search_city {
+      padding: 0;
+    }
     .ranking {
       max-width: 960px;
       margin: 0 auto;
+      padding: 0 0 40px;
+      span {
+        font-size: 13px;
+      }
       &__box {
         @include box;
+        padding: 20px;
         .list {
           border: none;
           box-shadow: none;
@@ -1369,6 +1464,10 @@ a {
             width: 33%;
             > a {
               border: none;
+              line-height: 1.6;
+              > span {
+                width: calc(100% - 42px);
+              }
               &::after {
                 display: none;
               }
@@ -1381,7 +1480,7 @@ a {
     .site {
       max-width: 960px;
       margin: 0 auto;
-      padding: 0 10px 40px;
+      padding: 0 0 40px;
       &__head {
         padding: 0;
       }
@@ -1406,6 +1505,15 @@ a {
       > li {
         width: 49%;
       }
+    }
+    .service_select {
+      .select_box__wrap {
+        width: 200px;
+      }
+    }
+    .bottom_text {
+      font-size: 12px;
+      padding: 0 0 40px;
     }
   }
 }
