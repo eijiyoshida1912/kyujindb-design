@@ -56,3 +56,17 @@ $(function() {
         return false;
     });
 });
+
+// 口コミ投稿ページのSPモーダル
+$(function() {
+    $(".post_kuchikomi .post_form__modal_link > a").on("click", function() {
+        $(".post_kuchikomi .check_modal").fadeIn();
+        $("body").addClass("modal_open");
+        return false;
+    });
+    $(".post_kuchikomi .check_modal__close").on("click", function() {
+        $(".post_kuchikomi .check_modal").fadeOut();
+        $("body").removeClass("modal_open");
+        return false;
+    });
+});

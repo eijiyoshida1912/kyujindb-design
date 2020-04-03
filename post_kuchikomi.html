@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <body class="post_kuchikomi">
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="header__logo"><img src="./images/logo_header.png" alt="仕事探しDB"></a>
+        <ul class="buttons">
+          <li class="buttons__button">
+            <a href="#">
+              <i class="far fa-clock"></i>
+              <span class="buttons__text">閲覧履歴</span>
+              <span class="buttons__number">88</span>
+            </a>
+          </li>
+          <li class="buttons__button">
+            <a href="#">
+              <i class="far fa-heart"></i>
+              <span class="buttons__text">気になる</span>
+              <span class="buttons__number">88</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <ul class="breadcrumb">
+      <li><a href="#">TOP</a></li>
+      <li><a href="#">総合ランキング</a></li>
+      <li class="breadcrumb__this_page">東京都の求人</li>
+    </ul>
+    
+    <div class="content">
+      <!-- 確認事項モーダル -->
+      <div class="check_modal">
+        <div class="check_modal__inner">
+          <div class="check_modal__box">
+            <ul class="check_modal__text_list">
+              <li><strong>テキストテキストテキスト</strong></li>
+              <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+              <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+              <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+            </ul>
+            <button class="check_modal__close">閉じる</button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="flow">
+        <li class="active"><span>1</span>入力</li>
+        <li><span>2</span>完了</li>
+      </ul>
+
+      <div class="post_form">
+        <h1 class="page_title">口コミを投稿する</h1>
+        <h2 class="post_form__head">口コミ対象サービス</h2>
+        <p>リクルートエージェント</p>
+
+        <p class="post_form__modal_link"><a href="#">口コミ健全性維持の為の確認事項をご確認ください</a></p>
+        <div class="post_form__message_pc">
+          <h3 class="post_form__message_pc_head">健全性維持のための確認事項（必ずご確認ください）</h3>
+          <ul class="check_modal__text_list">
+            <li><strong>テキストテキストテキスト</strong></li>
+            <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+            <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+            <li>こちらの内容が不適切と思われた場合は下記フォームからご報告をお願いします。<br>ご報告いただいた内容については、確認の上適宜対応を行なっております。（ご返信は行なっておりません。）<br>なお、投稿者によるレポートの削除依頼は受け付けておりません。[<a href="#">詳細</a>]</li>
+          </ul>
+        </div>
+        
+        <form>
+          <h2 class="post_form__head">口コミ情報の入力</h2>
+          <h3 class="post_form__step"><span class="post_form__step_number">STEP 1</span>基本情報の選択<span class="post_form__require">必須</span></h3>
+
+
+          <ul class="form_list">
+            <li>
+              <p class="form_list__head">年齢</p>
+              <select class="form_list__age">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              歳
+            </li>
+            <li>
+              <p class="form_list__head">性別</p>
+              <ul class="form_list__gender">
+                <li><input type="radio" id="male"><label for="male">男性</label></li>
+                <li><input type="radio"><label>女性</label></li>
+              </ul>
+            </li>
+            <li>
+              <p class="form_list__head">職種</p>
+              <select class="form_list__jobs">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </li>
+            <li>
+              <p class="form_list__head">利用実績</p>
+              <select class="form_list__performance">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </li>
+          </ul>
+
+          <h3 class="post_form__step"><span class="post_form__step_number">STEP 2</span>各種評価の選択<span class="post_form__require">必須</span></h3>
+          <ul class="form_list--button">
+            <li>
+              <p class="form_list__button_head">コンサルタントのヒアリングはいかがでしたか？</p>
+              <ul class="button_list">
+                <li><input type="radio" name="q1" id="b1"><label for="b1">非常に悪い</label></li>
+                <li><input type="radio" name="q1" id="b2"><label for="b2">悪い</label></li>
+                <li><input type="radio" name="q1" id="b3"><label for="b3">普通</label></li>
+                <li><input type="radio" name="q1" id="b4"><label for="b4">良い</label></li>
+                <li><input type="radio" name="q1" id="b5"><label for="b5">非常に良い</label></li>
+              </ul>
+            </li>
+            <li>
+              <p class="form_list__button_head">コンサルタントのヒアリングはいかがでしたか？</p>
+              <ul class="button_list">
+                <li><input type="radio" name="q2" id="c1"><label for="c1">非常に悪い</label></li>
+                <li><input type="radio" name="q2" id="c2"><label for="c2">悪い</label></li>
+                <li><input type="radio" name="q2" id="c3"><label for="c3">普通</label></li>
+                <li><input type="radio" name="q2" id="c4"><label for="c4">良い</label></li>
+                <li><input type="radio" name="q2" id="c5"><label for="c5">非常に良い</label></li>
+              </ul>
+            </li>
+            <li>
+              <p class="form_list__button_head">コンサルタントのヒアリングはいかがでしたか？</p>
+              <ul class="button_list">
+                <li><input type="radio" name="q3" id="d1"><label for="d1">非常に悪い</label></li>
+                <li><input type="radio" name="q3" id="d2"><label for="d2">悪い</label></li>
+                <li><input type="radio" name="q3" id="d3"><label for="d3">普通</label></li>
+                <li><input type="radio" name="q3" id="d4"><label for="d4">良い</label></li>
+                <li><input type="radio" name="q3" id="d5"><label for="d5">非常に良い</label></li>
+              </ul>
+            </li>
+
+          </ul>
+          <h3 class="post_form__step"><span class="post_form__step_number">STEP 3</span>評価アンケート<span class="post_form__require">必須</span></h3>
+          <p class="post_form__notice">下記のアンケート項目は「各項目50文字以上」の入力が必要です。<br>4項目すべての入力が終わった時点で、口コミを登録することができます。</p>
+
+          <ul class="form_list__textarea_list">
+            <li>
+              <p class="form_list__head">コンサルタントについて</p>
+              <p class="form_list__textarea_question">あなたを担当したコンサルタントは、どのような方でしたか？<br>面接時のヒアリングや、フォロー体制などを教えてください。</p>
+              <textarea class="form_list__textarea"></textarea>
+              <p class="form_list__count">現在<strong>50</strong>文字</p>
+            </li>
+            <li>
+              <p class="form_list__head">コンサルタントについて</p>
+              <p class="form_list__textarea_question">あなたを担当したコンサルタントは、どのような方でしたか？<br>面接時のヒアリングや、フォロー体制などを教えてください。</p>
+              <textarea class="form_list__textarea"></textarea>
+              <p class="form_list__count">現在<strong>50</strong>文字</p>
+            </li>
+            <li>
+              <p class="form_list__head">コンサルタントについて</p>
+              <p class="form_list__textarea_question">あなたを担当したコンサルタントは、どのような方でしたか？<br>面接時のヒアリングや、フォロー体制などを教えてください。</p>
+              <textarea class="form_list__textarea"></textarea>
+              <p class="form_list__count">現在<strong>50</strong>文字</p>
+            </li>
+
+          </ul>
+
+          <button type="submit" class="post_form__submit">口コミを投稿する</button>
+          <p class="post_form__back"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>
+ 企業TOPに戻る</a></p>
+          
+          
+        </form>
+      </div>
+
+    </div>
+
+    <ul class="breadcrumb">
+      <li><a href="#">TOP</a></li>
+      <li><a href="#">総合ランキング</a></li>
+      <li class="breadcrumb__this_page">東京都の求人</li>
+    </ul>
+
+    <footer class="footer">
+      <p class="footer__logo"><img src="./images/logo_header.png" alt="仕事探しDB"></p>
+      <ul class="footer__links">
+        <li><a href="#">仕事探しDBとは</a></li>
+        <li><a href="#">運営会社</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">ヘルプ</a></li>
+        <li><a href="#">広告掲載(無料)</a></li>
+      </ul>
+      <p class="footer__address">&copy; 仕事探しDB</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
