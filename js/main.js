@@ -12,6 +12,7 @@ $(function() {
         var targetId = "#result--" + id;
         $(".search_result #search_tabs > li").removeClass("active");
         $(this).addClass("active");
+        $(".search_buttons__submit_wrap").show();
         $(".search_result .search_buttons__condition_list").removeClass("open");
         $(".search_result " + targetId).addClass("open");
     });
