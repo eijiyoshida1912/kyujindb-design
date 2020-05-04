@@ -789,6 +789,50 @@ a {
   .search_buttons--sp {
     background-color: #fff;
     padding: 10px;
+    .pref__box--sp {
+      display: none;
+      &.open {
+        display: block;
+      }
+      .child_pref_list > li {
+        line-height: 44px;
+        border-bottom: 1px solid #ddd;
+      }
+      .pref__area {
+        display: block;
+        padding: 0 10px;
+        position: relative;
+        line-height: 44px;
+        border-bottom: 1px solid #ddd;
+        &:after {
+          content: '\f107';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 10px;
+          color: #2863a5;
+        }
+      }
+      .child_pref_list {
+        display: none;
+        > li {
+          padding: 0 10px 0 20px;
+          display: block;
+          position: relative;
+          > input {
+            margin-right: 4px;
+          }
+          &:after {
+            content: '\f105';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 10px;
+            color: #2863a5;
+          }
+        }
+      }
+    }
     .search_buttons {
       &__inner {
         @include box;

@@ -13,10 +13,18 @@ $(function() {
         $(".search_result #search_tabs > li").removeClass("active");
         $(this).addClass("active");
         $(".search_buttons__submit_wrap").show();
-        $(".search_result .search_buttons__condition_list").removeClass("open");
+        $(".search_result .search_buttons__condition > ul").removeClass("open");
         $(".search_result " + targetId).addClass("open");
     });
 });
+
+// SP検索結果ページの地域アコーディオン
+$(function() {
+    $(".search_result .pref__box--sp .pref__area").on("click", function() {
+        $(this).next().slideToggle();
+    });
+});
+
 
 // 企業詳細ページのページ選択タブ
 $(function() {
